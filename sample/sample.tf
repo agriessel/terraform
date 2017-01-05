@@ -3,7 +3,7 @@ provider "aws" {
   profile = "testing"
 }
 
-resource "aws_instance" "server" {
+resource "aws_instance" "example" {
   ami = "ami-57eae033"
   instance_type = "t2.micro"
   key_name = "${aws_key_pair.developer.id}"
